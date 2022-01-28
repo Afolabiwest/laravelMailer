@@ -1,5 +1,5 @@
 <?php
-namespace App\Helpers;
+namespace App\LaravelMailer;
 
 use Mail;
 use Illuminate\Bus\Queueable;
@@ -15,6 +15,14 @@ class LaravelMailer extends Mailable
 	public $senderName 	= '';
 	public $view 		= '';
     public $subject 	= '';
+	
+	/* 
+	*	@param $data - Data to be stiched to the view, 
+	*	@param $view - Laravel blade view, 
+	*	@param $senderEmail - Optional sender email address, 
+	*	@param $senderName - Optional sender name
+	*	@return void
+	*/
 	
 	public function __construct($data, $view, $senderEmail ='', $senderName ='' )
     {
