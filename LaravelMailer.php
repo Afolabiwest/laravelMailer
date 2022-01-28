@@ -47,6 +47,15 @@ class LaravelMailer extends Mailable
     }
 	
 	
+	/* 
+	*	@param $receiver - Receiver's email address, 
+	*	@param $data - Data to be stiched to the view, 
+	*	@param $view - Laravel blade view, 
+	*	@param $senderEmail - Optional sender email address, 
+	*	@param $senderName - Optional sender name
+	*	@return void
+	*/
+	
 	public static function postMail($receiver, $data, $view, $senderEmail ='', $senderName ='' ){	
 		$mailer = new self($data, $view, $senderEmail ='', $senderName ='' );
 		Mail::to($receiver)->send($mailer);
