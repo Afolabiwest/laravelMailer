@@ -17,7 +17,7 @@ class LaravelMailer extends Mailable
     public $subject 	= '';
 	
 	/* 
-	*	@param $data - Data to be stiched to the view, 
+	*	@param $data - Data to be stitched to the view, 
 	*	@param $view - Laravel blade view, 
 	*	@param $senderEmail - Optional sender email address, 
 	*	@param $senderName - Optional sender name
@@ -49,7 +49,7 @@ class LaravelMailer extends Mailable
 	
 	/* 
 	*	@param $receiver - Receiver's email address, 
-	*	@param $data - Data to be stiched to the view, 
+	*	@param $data - Data to be stitched to the view, 
 	*	@param $view - Laravel blade view, 
 	*	@param $senderEmail - Optional sender email address, 
 	*	@param $senderName - Optional sender name
